@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Restaurant Web App</title>
+    <!-- Add your CSS file -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <h1>Restaurant Name</h1>
+    </header>
+
+    <!-- Navbar for navigation -->
+    <nav>
+      <ul>
+        <li><a href="#" onclick="showMenu();">Menu</a></li>
+        <li><a href="#" onclick="showSpecials();">Specials</a></li>
+        <li><a href="#" onclick="showMap();">Map</a></li>
+      </ul>
+    </nav>
+    <h1>Click on Menu, Specials and Map</h1>
+    <!-- HTML snippet for the front page of the restaurant web app -->
+    <!-- <div class="tiles">
+      <div class="tile" id="menu">
+        <a href="#" onclick="showMenu();">Menu</a>
+      </div>
+      <div class="tile" id="specials">
+        <a href="#" onclick="showSpecials();">Specials</a>
+      </div>
+      <div class="tile" id="map">
+        <a href="#" onclick="showMap();">Map</a>
+      </div>
+    </div> -->
+
+    <!-- Container to display content -->
+    <div id="content"></div>
+
+    <script>
+      // Function to show the menu
+      function showMenu() {
+        // Update content to show the menu
+        document.getElementById("content").innerHTML = `
+        <h2>Menu</h2>
+        <ul>
+          <li>Burger - $10</li>
+          <li>Pasta - $12</li>
+          <li>Salad - $8</li>
+        </ul>
+      `;
+      }
+
+      // Function to show the specials
+      function showSpecials() {
+        // Update content to show the specials
+        document.getElementById("content").innerHTML = `
+        <h2>Specials</h2>
+        <ul>
+          <li>Special Burger Combo - $15</li>
+          <li>Chef's Special Pasta - $18</li>
+          <li>Healthy Salad Combo - $12</li>
+        </ul>
+      `;
+      }
+
+      // Function to show the map
+      function showMap() {
+        // Update content to show the map
+        document.getElementById("content").innerHTML = `
+        <h2>Map</h2>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3958.7414640242057!2d-105.00185918467594!3d39.75090797944825!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x876b80aa9ee282db%3A0x84a40f92c68e0cc5!2sRed%20Rocks%20Amphitheatre!5e0!3m2!1sen!2sus!4v1634271303270!5m2!1sen!2sus" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy"></iframe>
+      `;
+      }
+    </script>
+  </body>
+</html>
